@@ -1,17 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-02-08T12:04:41Z" name="Default suite" finished-at="2019-02-08T12:04:51Z" duration-ms="9462">
+  <suite started-at="2019-02-11T09:04:35Z" name="Default suite" finished-at="2019-02-11T09:04:35Z" duration-ms="79">
     <groups>
     </groups>
-    <test started-at="2019-02-08T12:04:41Z" name="Default test" finished-at="2019-02-08T12:04:51Z" duration-ms="9462">
+    <test started-at="2019-02-11T09:04:35Z" name="Default test" finished-at="2019-02-11T09:04:35Z" duration-ms="79">
       <class name="mavenTest.FirstClass">
-        <test-method signature="openBrowser()[pri:0, instance:mavenTest.FirstClass@7530ad9c]" started-at="2019-02-08T12:04:41Z" name="openBrowser" finished-at="2019-02-08T12:04:51Z" duration-ms="9439" status="PASS">
+        <test-method signature="openBrowser()[pri:0, instance:mavenTest.FirstClass@7748410a]" started-at="2019-02-11T09:04:35Z" name="openBrowser" finished-at="2019-02-11T09:04:35Z" duration-ms="51" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.google.common.base.Preconditions.checkState(ZLjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:339)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at mavenTest.FirstClass.openBrowser(FirstClass.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="closebrowser()[pri:1, instance:mavenTest.FirstClass@7530ad9c]" started-at="2019-02-08T12:04:51Z" name="closebrowser" finished-at="2019-02-08T12:04:51Z" duration-ms="2" status="PASS">
+        <test-method signature="closebrowser()[pri:1, instance:mavenTest.FirstClass@7748410a]" started-at="2019-02-11T09:04:35Z" name="closebrowser" finished-at="2019-02-11T09:04:35Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
